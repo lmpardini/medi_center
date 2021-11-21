@@ -360,6 +360,57 @@ footer{
   
 }
 
+@media (max-width: 996px){
+    .container{
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    #banner{
+        margin-top: 20px;
+    }
+    .logo{
+        padding: 25px;
+        padding-bottom: 14px;
+        justify-content: center;
+    }
+    .menu{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    nav a{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .banner_options{
+        height: 230px;
+    }
+    .banner_headline h1{
+        font-size: 55px;
+        padding: 20px;
+    }
+    .banner_headline h2{
+        font-size: 18px;
+        padding: 20px;
+    }
+    #geral section{
+        padding-left: 20px;
+    }
+    #geral aside{
+        padding: 20px;
+    }
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    
+
+
+}
+
 
 
 
