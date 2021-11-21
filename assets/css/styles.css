@@ -359,8 +359,7 @@ footer{
     padding-bottom: 20px;
   
 }
-
-@media (max-width: 996px){
+@media only screen and (min-width: 760px) and (max-width:996px){
     .container{
         width: 768px;
         display: flex;
@@ -405,11 +404,56 @@ footer{
         flex-direction: column;
         padding: 20px;
     }
-
-    
-
-
 }
+@media only screen and (max-width:760px){
+
+    header .container{
+        flex-direction: column;
+    }
+
+  
+    .logo{
+        padding: 25px;
+        padding-bottom: 14px;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    nav a{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .banner_options{
+        flex-direction: column;
+    }
+    #geral{
+        margin-top: 300px;
+    }
+    .footer_menu{
+        flex-direction: column;
+    }
+
+    .banner_headline h1{
+        font-size: 55px;
+        padding: 20px;
+    }
+    .banner_headline h2{
+        font-size: 18px;
+        padding: 20px;
+    }
+    #geral section{
+        padding-left: 20px;
+    }
+    #geral aside{
+        padding: 20px;
+    }
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
 
 
 
