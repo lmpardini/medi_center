@@ -404,13 +404,15 @@ footer{
         flex-direction: column;
         padding: 20px;
     }
+    .footer_copy{
+        padding: 20px;
+    }
 }
-@media only screen and (max-width:760px){
+@media only screen and (min-width: 360px) and (max-width:760px){
 
     header .container{
         flex-direction: column;
     }
-
   
     .logo{
         padding: 25px;
@@ -420,39 +422,139 @@ footer{
     .menu{
         display: none;
     }
-    nav a{
-        padding: 10px;
-        font-size: 16px;
+    
+    #banner{
+        height: auto;
     }
     .banner_options{
         flex-direction: column;
     }
     #geral{
-        margin-top: 300px;
+        height: auto;
+    }
+    .banner_headline h1{
+        max-width: 230px;
+        font-size: 40px;
+        padding: 20px;
+    }
+    .banner_headline h2{
+        max-width: 240px;
+        font-size: 16px;
+        padding: 20px;
+    }
+    .banner_options{
+        height: auto;
+    }
+    #geral{
+        height: auto;
+        padding: 20px;
+        
+    }
+    #geral .container{
+        flex-direction: column;
     }
     .footer_menu{
         flex-direction: column;
     }
-
-    .banner_headline h1{
-        font-size: 55px;
-        padding: 20px;
-    }
-    .banner_headline h2{
-        font-size: 18px;
-        padding: 20px;
-    }
-    #geral section{
-        padding-left: 20px;
-    }
-    #geral aside{
-        padding: 20px;
-    }
     .footer_area{
         flex-direction: column;
+    }
+    .areaitem_contacts{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contacts_tel{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .footer_areaitem{
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer_copy{
         padding: 20px;
     }
 }
+
+    @media only screen and (max-width:359px){
+        header .container{
+            flex-direction: column;
+        }
+      
+        .logo{
+            padding: 25px;
+            padding-bottom: 14px;
+            justify-content: center;
+        }
+        .menu{
+            display: none;
+        }
+        
+        #banner{
+            height: auto;
+        }
+        .banner_options{
+            flex-direction: column;
+        }
+        #geral{
+            height: auto;
+        }
+        #geral aside{
+            
+        }
+        #geral section{
+            margin-left: 30px;
+        }
+        .banner_headline h1{
+            max-width: 230px;
+            font-size: 30px;
+            padding: 20px;
+        }
+        .banner_headline h2{
+            max-width: 240px;
+            font-size: 14px;
+            padding: 20px;
+        }
+        .banner_options{
+            height: auto;
+        }
+        #geral{
+            height: auto;
+            padding: 20px;
+            
+        }
+        #geral .container{
+            flex-direction: column;
+        }
+        #departments img{
+            width: 135px;
+            height: 135px;
+        }
+        .footer_menu{
+            flex-direction: column;
+        }
+        .footer_area{
+            flex-direction: column;
+        }
+        .areaitem_contacts{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .contacts_tel{
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+        .footer_areaitem{
+            padding: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .footer_copy{
+            padding: 20px;
+        }
+}
+
 
 
 
