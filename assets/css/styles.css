@@ -359,6 +359,21 @@ footer{
     padding-bottom: 20px;
   
 }
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+}
+
+.mm_line{
+    height: 3px;
+    background-color: #39aae1 ;
+}
+
 @media only screen and (min-width: 760px) and (max-width:996px){
     .container{
         width: 768px;
@@ -379,6 +394,7 @@ footer{
         justify-content: center;
         margin-bottom: 10px;
     }
+    
     nav a{
         padding: 10px;
         font-size: 16px;
@@ -409,20 +425,38 @@ footer{
     }
 }
 @media only screen and (min-width: 360px) and (max-width:760px){
+    
+    header{
+        height: auto;
+    }
 
     header .container{
-        flex-direction: column;
-    }
-  
+        flex-direction: row;
+    }  
     .logo{
         padding: 25px;
         padding-bottom: 14px;
         justify-content: center;
-    }
+    }   
     .menu{
-        display: none;
+        flex-direction: row;
+        align-items: initial;
     }
-    
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+     
     #banner{
         height: auto;
     }
@@ -447,8 +481,7 @@ footer{
     }
     #geral{
         height: auto;
-        padding: 20px;
-        
+        padding: 20px;        
     }
     #geral .container{
         flex-direction: column;
@@ -476,21 +509,33 @@ footer{
         padding: 20px;
     }
 }
-
     @media only screen and (max-width:359px){
         header .container{
-            flex-direction: column;
-        }
-      
+            flex-direction: row;
+        }      
         .logo{
             padding: 25px;
             padding-bottom: 14px;
             justify-content: center;
         }
         .menu{
-            display: none;
+            flex-direction: row;
+            align-items: initial;
         }
-        
+        nav ul{
+            flex-direction: column;
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: #FFFFFF;
+        }
+        .menuMobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+               
         #banner{
             height: auto;
         }
@@ -499,9 +544,6 @@ footer{
         }
         #geral{
             height: auto;
-        }
-        #geral aside{
-            
         }
         #geral section{
             margin-left: 30px;
@@ -553,7 +595,8 @@ footer{
         .footer_copy{
             padding: 20px;
         }
-}
+    }
+
 
 
 
